@@ -5,8 +5,8 @@ import "./globals.css";
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title: "BudgetCal",
-  description: "Budget calendar app",
+  title: "StartupStack",
+  description: "Full Stack Startup boilerplate",
 };
 
 export default function RootLayout({
