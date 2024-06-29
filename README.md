@@ -5,6 +5,11 @@
 - While in the root of the project run: `supabase start`
 - Keep terminal open to grab the output values to store as env vars...
 - Create a file named `.env.local` at the root of this project
+<pre>
+<code>NEXT_PUBLIC_SUPABASE_URL=<span style="color: cyan;">API URL</span>
+NEXT_PUBLIC_SUPABASE_ANON_KEY=<span style="color: cyan;">anon key</span>
+</code>
+</pre>
 
 ### Running the project
 
