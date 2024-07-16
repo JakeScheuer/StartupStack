@@ -7,7 +7,8 @@
     "devs": "next dev --experimental-https",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "next lint",
+    "test": "jest"
   },
   "dependencies": {
     "@heroicons/react": "^2.1.3",
