@@ -3,7 +3,7 @@
 import { useState } from "react";
 import { login, signup } from "./actions";
 import FormSubmitButton from "@/src/components/FormSubmitButton";
-import joinClasses from "@/src/utils";
+import reactiveStyle from "@/src/utils";
 
 const AuthForm = () => {
   const [isSignUp, setIsSignUp] = useState(false);
@@ -13,7 +13,7 @@ const AuthForm = () => {
       <div role="tablist" className="tabs tabs-bordered mb-4">
         <a
           role="tab"
-          className={joinClasses(
+          className={reactiveStyle(
             !isSignUp && "tab-active font-semibold",
             "tab"
           )}
@@ -23,7 +23,10 @@ const AuthForm = () => {
         </a>
         <a
           role="tab"
-          className={joinClasses(isSignUp && "tab-active font-semibold", "tab")}
+          className={reactiveStyle(
+            isSignUp && "tab-active font-semibold",
+            "tab"
+          )}
           onClick={() => setIsSignUp(true)}
         >
           {"Sign up"}
