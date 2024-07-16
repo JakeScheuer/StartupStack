@@ -16,14 +16,14 @@ export const prettyPrint = (obj: Object) => {
   return JSON.stringify(obj, null, 2);
 };
 
-export const capitalize = (word: string) => {
-  return word.charAt(0).toUpperCase() + word.slice(1);
-};
-
 // Logs a message on the server, redirects user in ui, displays message to user
 export const handleError = (opts: ErrorOpts) => {
   const { serverMessage, clientMessage, logLevel } = opts;
   const uiMessage = clientMessage ?? serverMessage;
   serverLog(serverMessage, logLevel);
   redirect(`/error?m=${uiMessage}`);
+};
+
+export const capitalize = (word: string) => {
+  return word.charAt(0).toUpperCase() + word.slice(1);
 };
